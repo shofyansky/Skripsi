@@ -1,0 +1,50 @@
+outline
+latar belakang 3 slide
+rumusan masalah 1 slide
+tujuan dan manfaat 1-2 slide
+Ruang lingkup 1 slide
+Tinjauan pustaka 7-8 slide
+	-> apa itu outlier
+	-> algoritme LOF
+	-> peseudocode
+Metode
+	-> flowchart
+	-> 5-6 slide
+lingkungan pengembangan sistem 1 sllide
+link websitenya
+jadwal penelitian 1 slide
+Daftar pustaka 1 slide
+terimakasih tambah email
+ 
+-----------------
+siapkan jawaban untuk kemungkinan pertanyaan
+harus ada halaman
+harus ada judul
+jangan potong rumus -> bikin dari awal
+tabel jangan kurang dari 18pt
+font jangan kurang dari 22pt
+harus ada rujukan gambar
+materi harus sesuai dengan proposal
+
+kamis Deadline pengumpulan presentasi
+jika tidak ada di tinjauan pustaka
+maka simpan di metode
+
+nilai kolokium
+makalah
+presentasi
+cara menjawab
+
+sangat siap untuk presentasi 
+persiapkan setiap kemungkinan
+ini presentasi karya ilmiah
+
+
+
+-----------
+Data 2013
+
+
+
+
+

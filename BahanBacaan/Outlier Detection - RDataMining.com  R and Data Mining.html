@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0053)http://www.rdatamining.com/examples/outlier-detection -->
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<script async="" src="./Outlier Detection - RDataMining.com  R and Data Mining_files/analytics.js"></script><script type="text/javascript">/* Copyright 2008 Google. */ (function() { var b=window,e="chrome",g="tick",h="wtsrt_",l="tbsd_",m="tbnd_",n="start",p="_wtsrt",q="_tbnd",r="CSI/";(function(){function k(a){this.t={};this.tick=function(a,d,c){this.t[a]=[void 0!=c?c:(new Date).getTime(),d];if(void 0==c)try{b.console.timeStamp(r+a)}catch(f){}};this[g](n,null,a)}var a;b.performance&&(a=b.performance.timing);var t=a?new k(a.responseStart):new k;b.jstiming={Timer:k,load:t};if(a){var d=a.navigationStart,f=a.responseStart;0<d&&f>=d&&(b.jstiming.srt=f-d)}if(a){var c=b.jstiming.load;0<d&&f>=d&&(c[g](p,void 0,d),c[g](h,p,f),c[g](l,h))}try{a=null,b[e]&&b[e].csi&&(a=Math.floor(b[e].csi().pageT),
+c&&0<d&&(c[g](q,void 0,b[e].csi().startE),c[g](m,q,d))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,c&&0<d&&(c[g](q,void 0,b.external.startE),c[g](m,q,d))),a&&(b.jstiming.pt=a)}catch(u){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.rdatamining.com/_/rsrc/1346323866995/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/66dddd/system/app/images/apple-touch-icon.png" type="image/png">
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d=window,e="length",h="",k="__duration__",l="function";function m(c){return document.getElementById(c)}d.byId=m;function n(c){return c.replace(/^\s+|\s+$/g,h)}d.trim=n;var p=[],q=0;d.JOT_addListener=function(c,a,b){var f=new String(q++);c={eventName:c,handler:a,compId:b,key:f};p.push(c);return f};d.JOT_removeListenerByKey=function(c){for(var a=0;a<p[e];a++)if(p[a].key==c){p.splice(a,1);break}};d.JOT_removeAllListenersForName=function(c){for(var a=0;a<p[e];a++)p[a].eventName==c&&p.splice(a,1)};
+d.JOT_postEvent=function(c,a,b){var f={eventName:c,eventSrc:a||{},payload:b||{}};if(d.JOT_fullyLoaded)for(a=p[e],b=0;b<a&&b<p[e];b++){var g=p[b];g&&g.eventName==c&&(f.listenerCompId=g.compId||h,(g=typeof g.handler==l?g.handler:d[g.handler])&&g(f))}else d.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};d.JOT_delayedEvents=[];d.JOT_fullyLoaded=!1;
+d.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var f=0;60<=b&&(b/=60,f=2);2<=b&&f++;return a?d.JOT_siteRelTimeStrs[f].replace(k,Math.floor(b)):d.JOT_userRelTimeStrs[f].replace(k,Math.floor(b))}; })()
+</script>
+<script>
+
+    
+
+    var breadcrumbs = [{"title":"Examples","dir":"ltr","path":"/examples","deleted":false},{"title":"Outlier Detection","dir":"ltr","path":"/examples/outlier-detection","deleted":false}];
+    var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/66dddd/system/app/images/cleardot.gif';
+
+    
+    var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+    
+    
+
+    
+
+    var webspace = {"scottyUrl":"/_/upload","isConsumer":true,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/66dddd/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/66dddd/system/js/codemirror.js","http://www.gstatic.com/sites/p/66dddd/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/66dddd/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/66dddd/system/app/css/trogedit.css","/_/rsrc/1423750980000/system/app/css/editor.css","http://www.gstatic.com/sites/p/66dddd/system/app/css/codeeditor.css","/_/rsrc/1423750980000/system/app/css/camelot/editor-jfk.css"]},"canPublishScriptToAnyone":true,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"sharingUrlPrefix":"/_/sharing","csiReportUri":"http://csi.gstatic.com/csi","sharingPolicy":"OPENED","siteNoticeUrlEnabled":null,"siteNoticeUrlAddress":null,"analyticsAccountId":"UA-4389444-3","siteTemplateId":false,"page":{"canDeleteWebspace":null,"locale":"en","state":"","wuid":"wuid:gx:4273d5c7835f2b09","pageInheritsPermissions":null,"timeZone":"America/Los_Angeles","properties":{},"type":"text","canChangePath":true,"parentWuid":"wuid:gx:6836ac957fe7cc","isPageDraft":null,"revision":14,"title":"Outlier Detection","isRtlLocale":false,"bidiEnabled":false,"siteLocale":"en","name":"outlier-detection","path":"/examples/outlier-detection","currentTemplate":{"title":"Web Page","path":"/system/app/pagetemplates/text"},"isSiteRtlLocale":false,"parentPath":"/examples"},"baseUri":"","enableUniversalAnalytics":false,"name":"rdatamining","features":{"copySiteProgressUpdates":true,"asyncPermanentDelete":true,"docosHideNotificationSettings":true,"driveImageLinkFromOnepick":true,"jsClickFix":false,"moreMobileStyleImprovements":true,"siteNoticeUrl":true,"pageDrafts":false,"asyncPageKeyFix":true,"fileCabinetScreenReaderFix":true,"pdfEmbedSupport":false,"mobileOrientationFix":true,"siteMapBottomPaginationButtonsFix":true,"newMyMapsEmbeds":true,"plusBadge":false,"analyticsTrackingForCorp":false,"freebirdFormEmbedDocTypeFix":true,"updatedTosAndPrivacyLinks":null,"htmlEmbed":true,"useGapiIframesForOnePick":true,"languageSelectDefaultTextSetToDefault":true,"domainAnalyticsInGAOnly":true},"domain":"defaultdomain","adsensePublisherId":"ca-pub-5028529536813706","gvizVersion":1,"siteTitle":"RDataMining.com: R and Data Mining","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/site/rdatamining/examples/outlier-detection\u0026service\u003djotspot","pageSharingId":"jotspot_page","plusPageId":"","onepickBaseUrl":"https://docs.google.com","termsUrl":"//www.google.com/intl/en/policies/terms/","siteNoticeRevision":null,"enableAnalytics":true,"isPublic":true,"siteNoticeMessage":null,"plusPageUrl":"","homePath":"/","sharingId":"jotspot","isAdsenseEnabled":true,"gadgets":{"baseUri":"/system/app/pages/gadgets"},"adsensePromoClickedOrSiteIneligible":true,"isStartPageEnabled":false,"domainAnalyticsAccountId":"","user":{"uid":"","renderMobile":false,"namespaceUser":false,"sessionIndex":"","primaryEmail":"guest","displayNameOrEmail":"guest","namespace":"","hasAdminAccess":false,"guest_":true,"keyboardShortcuts":true,"hasWriteAccess":false,"domain":"","dasherUser":false,"userName":"guest"}};
+    webspace.page.breadcrumbs = breadcrumbs;
+  
+
+
+var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<link rel="canonical" href="./Outlier Detection - RDataMining.com  R and Data Mining_files/Outlier Detection - RDataMining.com  R and Data Mining.html">
+<meta name="google-site-verification" content="onKrsDODZofbsD6QwXfNbcN-hPodvvf2YjPi_Qz-76g">
+<meta name="title" content="Outlier Detection - RDataMining.com: R and Data Mining">
+<meta itemprop="name" content="Outlier Detection - RDataMining.com: R and Data Mining">
+<meta property="og:title" content="Outlier Detection - RDataMining.com: R and Data Mining">
+<meta name="description" content="Outlier Detection with R using LOF">
+<meta itemprop="description" content="Outlier Detection with R using LOF">
+<meta id="meta-tag-description" property="og:description" content="Outlier Detection with R using LOF">
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="./Outlier Detection - RDataMining.com  R and Data Mining_files/standard-css-beigeandblue-ltr-ltr.css">
+<link rel="stylesheet" type="text/css" href="./Outlier Detection - RDataMining.com  R and Data Mining_files/overlay.css">
+<link rel="stylesheet" type="text/css" href="./Outlier Detection - RDataMining.com  R and Data Mining_files/allthemes-view.css">
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Outlier Detection - RDataMining.com: R and Data Mining</title>
+<meta itemprop="image" content="http://www.rdatamining.com/_/rsrc/1421497372484/examples/outlier-detection/density-plot.jpg">
+<meta property="og:image" content="http://www.rdatamining.com/_/rsrc/1421497372484/examples/outlier-detection/density-plot.jpg">
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+<script src="./Outlier Detection - RDataMining.com  R and Data Mining_files/ga.js"></script></head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tbody><tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="sites-chrome-header-valign-middle"><div class="sites-header-cell-buffer-wrapper"><h2><a href="http://www.rdatamining.com/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="./Outlier Detection - RDataMining.com  R and Data Mining_files/customLogo.gif" alt="RDataMining.com: R and Data Mining" class="sites-logo sites-chrome-header-valign-middle "></a><a href="http://www.rdatamining.com/" dir="ltr" id="sites-chrome-userheader-title">RDataMining.com: R and Data Mining</a></h2></div></td><td class="sites-layout-searchbox sites-chrome-header-valign-middle "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.rdatamining.com/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site"><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site"><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-select-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0" style="-webkit-user-select: none;">Search this site</div><div id="sites-searchbox-select-dropdown" class="goog-inline-block goog-flat-menu-button" role="listbox" aria-expanded="false" tabindex="0" aria-haspopup="true" aria-activedescendant=":0" style="-webkit-user-select: none;"><div class="goog-inline-block goog-flat-menu-button-caption" id=":0" role="option" aria-setsize="3" aria-posinset="1">Search this site</div><div class="goog-inline-block goog-flat-menu-button-dropdown sites-jfk-menu-button-dropdown"> </div></div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+<div class="sites-header-nav"><ul class="sites-header-nav-container-boxes"></ul><div style="clear: both;"></div></div>
+</td>
+</tr>
+</tbody></table> 
+</div> 
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tbody><tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:170px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotid="navList" class="has-expander"><li class="topLevel nav-first "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/home" jotid="wuid:gx:3808802e20f5625" class="sites-navigation-link topLevel">Home</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/news" jotid="wuid:gx:71119d7170396f72" class="sites-navigation-link topLevel">News</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/courses" jotid="wuid:gx:68e6aa8d0c099b53" class="sites-navigation-link topLevel">Course &amp; Seminar News</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/jobs" jotid="wuid:gx:2cdd7e553259e737" class="sites-navigation-link topLevel">Job News</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/resource-news" jotid="wuid:gx:67cd30ae5d0df706" class="sites-navigation-link topLevel">Resource News</a></div></li><li class="topLevel parent " wuid="gx:19b21130ed65ee4d"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="http://www.rdatamining.com/docs" jotid="wuid:gx:19b21130ed65ee4d" class="sites-navigation-link topLevel">Documents</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/docs/introduction-to-data-mining-with-r" jotid="wuid:gx:58c2e8862c9dac53" class="sites-navigation-link">Introduction to Data Mining with R</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/docs/r-reference-card-for-data-mining" jotid="wuid:gx:4a7e23925e9872e8" class="sites-navigation-link">R Reference Card for Data Mining</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/docs/r-and-data-mining-examples-and-case-studies" jotid="wuid:gx:274da7d018e3ba0b" class="sites-navigation-link">R and Data Mining: Examples and Case Studies</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/docs/introduction-to-data-mining-with-r-and-data-import-export-in-r" jotid="wuid:gx:89928991d6517a" class="sites-navigation-link">Introduction to Data Mining with R and Data Import/Export in R</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/docs/data-exploration-and-visualization-with-r" jotid="wuid:gx:1b847c77e2085d1b" class="sites-navigation-link">Data Exploration and Visualization with R</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/docs/regression-and-classification-with-r" jotid="wuid:gx:530bf30b7837d443" class="sites-navigation-link">Regression and Classification with R</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/docs/data-clustering-with-r" jotid="wuid:gx:3d55749440bfb7c7" class="sites-navigation-link">Data Clustering with R</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/docs/association-rule-mining-with-r" jotid="wuid:gx:27fbf61a773e2283" class="sites-navigation-link">Association Rule Mining with R</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/docs/text-mining-with-r-of-twitter-data-analysis" jotid="wuid:gx:617159448eb34e55" class="sites-navigation-link">Text Mining with R: Twitter Data Analysis</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/docs/time-series-analysis-and-mining-with-r" jotid="wuid:gx:69dc7a38838a8c33" class="sites-navigation-link">Time Series Analysis and Mining with R</a></div></li></ul></li><li class="topLevel parent " wuid="gx:6836ac957fe7cc"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="http://www.rdatamining.com/examples" jotid="wuid:gx:6836ac957fe7cc" class="sites-navigation-link topLevel">Examples</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/exploration" jotid="wuid:gx:68ca1a5b8e9215ec" class="sites-navigation-link">Data Exploration</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/decision-tree" jotid="wuid:gx:784e0aaf41402bdc" class="sites-navigation-link">Decision Trees</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/random-forest" jotid="wuid:gx:39e72b13a133915a" class="sites-navigation-link">Random Forest</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/kmeans-clustering" jotid="wuid:gx:771d9a354ad0bb29" class="sites-navigation-link">k-means Clustering</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/hierarchical-clustering" jotid="wuid:gx:44331012f4ec5ac" class="sites-navigation-link">Hierarchical Clustering</a></div></li><li class=""><div class="current-bg" jotid="wuid:gx:4273d5c7835f2b09" dir="ltr" style="padding-left: 38px;">Outlier Detection</div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/time-series-forecasting" jotid="wuid:gx:7fec9e842e15a02f" class="sites-navigation-link">Time Series Forecasting</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/time-series-analysis" jotid="wuid:gx:2e9a7a9298227024" class="sites-navigation-link">Time Series Analysis</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/time-series-clustering-classification" jotid="wuid:gx:49ed0d6348530808" class="sites-navigation-link">Time Series Clustering and Classification</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/association-rules" jotid="wuid:gx:14bff90b695b4024" class="sites-navigation-link">Association Rules</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/text-mining" jotid="wuid:gx:796ccf9f8f0144b" class="sites-navigation-link">Text Mining</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/twitter-follower-map" jotid="wuid:gx:6a111fc084b7e407" class="sites-navigation-link">Twitter Follower Map</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/social-network-analysis" jotid="wuid:gx:37862c334ba1a867" class="sites-navigation-link">Social Network Analysis</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/multidimensional-scaling" jotid="wuid:gx:7a5bb45c3945d5d8" class="sites-navigation-link">Multidimensional Scaling (MDS)</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/pca" jotid="wuid:gx:77cbbea02ae0e5ee" class="sites-navigation-link">Principal Component Analysis (PCA)</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/parallel-computing" jotid="wuid:gx:3226f8c271c94c08" class="sites-navigation-link">Parallel Computing</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/examples/other" jotid="wuid:gx:308554fb7b902498" class="sites-navigation-link">Other Examples</a></div></li></ul></li><li class="topLevel parent " wuid="gx:37d95cb1b12e8299"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="http://www.rdatamining.com/big-data" jotid="wuid:gx:37d95cb1b12e8299" class="sites-navigation-link topLevel">Big Data</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/big-data/big-data-platforms" jotid="wuid:gx:55e5912dd8e1af44" class="sites-navigation-link">Big Data Platforms</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/big-data/resources" jotid="wuid:gx:1cb5437e88c978ef" class="sites-navigation-link">Big Data Resources</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/big-data/r-hadoop-setup-guide" jotid="wuid:gx:3123de86ef432668" class="sites-navigation-link">Step-by-Step Guide to Setting Up an R-Hadoop System</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/big-data/rhadoop" jotid="wuid:gx:20f94421c66ade76" class="sites-navigation-link">Building an R Hadoop System</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/big-data/hadoop-cluster" jotid="wuid:gx:2b040d91b432daba" class="sites-navigation-link">Hadoop: from Single-Node Mode to Cluster Mode</a></div></li></ul></li><li class="topLevel parent " wuid="gx:487e21c3accea301"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="http://www.rdatamining.com/resources" jotid="wuid:gx:487e21c3accea301" class="sites-navigation-link topLevel">Resources</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/resources/onlinedocs" jotid="wuid:gx:1819c7d4ccd71106" class="sites-navigation-link">Online Documents, Books and Tutorials</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/resources/courses" jotid="wuid:gx:5e8948e5e6235cf6" class="sites-navigation-link">Free Online Courses</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/resources/data-mining-tutorials" jotid="wuid:gx:1e4e083326140792" class="sites-navigation-link">Data Mining Tutorials</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/resources/data" jotid="wuid:gx:4a498d651a50f5f9" class="sites-navigation-link">Free Datasets</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/resources/tools" jotid="wuid:gx:9fcf1cd9671d83d" class="sites-navigation-link">Free Data Mining Tools</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/data" jotid="wuid:gx:5698c44acc68389" class="sites-navigation-link topLevel">Datasets</a></div></li><li class="topLevel parent " wuid="gx:590c8909c1d29ceb"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="http://www.rdatamining.com/books" jotid="wuid:gx:590c8909c1d29ceb" class="sites-navigation-link topLevel">Books</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/books/rdm" jotid="wuid:gx:77e53d9609599e6c" class="sites-navigation-link">R and Data Mining: Examples and Case Studies</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/books/dmar" jotid="wuid:gx:47847d989a04c0f3" class="sites-navigation-link">Data Mining Applications with R</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="http://www.rdatamining.com/books/pmar" jotid="wuid:gx:4932705cdc82437a" class="sites-navigation-link">Post-Mining of Association Rules</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/package" jotid="wuid:gx:7af7ef99e0ab2fc9" class="sites-navigation-link topLevel">R Package for Data Mining</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/r" jotid="wuid:gx:37f58994a4b45430" class="sites-navigation-link topLevel">What is R</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/donate" jotid="wuid:gx:3f58023c30b2e6e2" class="sites-navigation-link topLevel">Donation &amp; Supporters</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/sponsors" jotid="wuid:gx:7fd964862b46af3c" class="sites-navigation-link topLevel">Sponsors</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="http://www.rdatamining.com/about" jotid="wuid:gx:c8f0cd85c0f0adb" class="sites-navigation-link topLevel">About RDataMining</a></div></li></ul></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<a href="http://www.rdatamining.com/examples" dir="ltr">Examples</a>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Outlier Detection</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-layout-name-right-sidebar-hf sites-layout-vbox"><div class="sites-layout-tile sites-tile-name-header sites-layout-empty-tile"><div dir="ltr"><br></div></div><table cellspacing="0" class="sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">This page shows an example on outlier detection with the LOF (Local Outlier Factor) algorithm.<br><h3><a name="TOC-The-LOF-algorithm"></a>The LOF algorithm</h3>LOF (Local Outlier Factor) is an algorithm for identifying density-based local outliers [Breunig et al., 2000]. With LOF, the local density of a point is compared with that of its neighbors. If the former is signi.cantly lower than the latter (with an LOF value greater than one), the point is in a sparser region than its neighbors, which suggests it be an outlier.<br><br>Function lofactor(data, k) in packages DMwR and dprep calculates local outlier factors using the LOF algorithm, where k is the number of neighbors used in the calculation of the local outlier factors.<br><h3><a name="TOC-Calculate-Outlier-Scores"></a>Calculate Outlier Scores</h3><div class="sites-codeblock sites-codesnippet-block"><code>&gt; library(DMwR)</code><br><code>&gt; # remove "Species", which is a categorical column</code><br><code>&gt; iris2 &lt;- iris[,1:4]</code><br><code>&gt; outlier.scores &lt;- lofactor(iris2, k=5)</code><br><code>&gt; plot(density(outlier.scores))</code></div><br><br><div style="display:block;text-align:left"><a href="http://www.rdatamining.com/examples/outlier-detection/density-plot.jpg?attredirects=0" imageanchor="1"><img alt="A density plot of outlier scores" border="0" src="./Outlier Detection - RDataMining.com  R and Data Mining_files/density-plot.jpg"></a></div><br><br><div class="sites-codeblock sites-codesnippet-block"><code>&gt; # pick top 5 as outliers</code><br><code>&gt; outliers &lt;- order(outlier.scores, decreasing=T)[1:5]</code><br><code>&gt; # who are outliers</code><br><code>&gt; print(outliers)</code><br><code>[1] 42 107 23 110 63</code></div><br><br><h3><a name="TOC-Visualize-Outliers-with-Plots"></a>Visualize Outliers with Plots</h3>Next, we show outliers with a biplot of the first two principal components.<br><br><div class="sites-codeblock sites-codesnippet-block"><code>&gt; n &lt;- nrow(iris2)</code><br><code>&gt; labels &lt;- 1:n</code><br><code>&gt; labels[-outliers] &lt;- "."</code><br><code>&gt; biplot(prcomp(iris2), cex=.8, xlabs=labels)</code></div><br><br><div style="display:block;text-align:left"><a href="http://www.rdatamining.com/examples/outlier-detection/biplot.jpg?attredirects=0" imageanchor="1"><img alt="Visualization of outliers in a biplot of the 1st two principal components" border="0" src="./Outlier Detection - RDataMining.com  R and Data Mining_files/biplot.jpg"></a></div><br><br>We can also show outliers with a pairs plot as below, where outliers are labeled with "+" in red.<br><br><div class="sites-codeblock sites-codesnippet-block"><code>&gt; pch &lt;- rep(".", n)</code><br><code>&gt; pch[outliers] &lt;- "+"</code><br><code>&gt; col &lt;- rep("black", n)</code><br><code>&gt; col[outliers] &lt;- "red"</code><br><code>&gt; pairs(iris2, pch=pch, col=col)</code></div><br><br><div style="display:block;text-align:left"><a href="http://www.rdatamining.com/examples/outlier-detection/pairs-plot.jpg?attredirects=0" imageanchor="1"><img alt="Visualization of outliers with a matrix of scatter plots" border="0" src="./Outlier Detection - RDataMining.com  R and Data Mining_files/pairs-plot.jpg"></a></div><br><br><h3><a name="TOC-Parallel-Computation-of-LOF-Scores"></a>Parallel Computation of LOF Scores</h3>Package Rlof provides function lof(), a parallel implementation of the LOF algorithm. Its usage is similar to the above lofactor(), but lof() has two additional features&nbsp;of supporting multiple values of k and several choices of distance metrics. Below is an example of lof(). <br><br><div class="sites-codeblock sites-codesnippet-block"><code>&gt; library(Rlof)</code><br><code>&gt; outlier.scores &lt;- lof(iris2, k=5)</code><br><code>&gt; # try with different number of neighbors (k = 5,6,7,8,9 and 10)</code><br><code>&gt; outlier.scores &lt;- lof(iris2, k=c(5:10))</code></div><br><br></div></td><td class="sites-layout-tile sites-tile-name-content-2 sites-canvas-sidebar"><div dir="ltr"><div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-on sites-embed" style="width:160px;"><div class="sites-embed-content sites-embed-type-ggs-gadget"><iframe title="gCodeAdSense" width="160" height="600" scrolling="no" frameborder="0" id="467692554" name="467692554" allowtransparency="true" class="igm" src="./Outlier Detection - RDataMining.com  R and Data Mining_files/ifr.html"></iframe></div></div></div><br><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:160px;"><div class="sites-embed-content sites-embed-type-adsense"><script type="text/javascript">
+<!--
+google_ad_client="pub-5028529536813706";
+google_ad_host="pub-6693688277674466";
+google_ad_width=160;
+google_ad_height=600;
+google_ad_format="160x600_as";
+google_ad_type="text";
+google_color_border="D7D7D7";
+google_color_bg="FFFFFF";
+google_color_link="000000";
+google_color_url="0066CC";
+google_color_text="000000";
+//-->
+</script><script type="text/javascript" src="./Outlier Detection - RDataMining.com  R and Data Mining_files/show_ads.js">
+</script></div></div></div></div><br></div></td></tr></tbody></table><div class="sites-layout-tile sites-tile-name-footer"><div dir="ltr"><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-on sites-embed" style="width:728px;"><div class="sites-embed-content sites-embed-type-ggs-gadget"><iframe title="gCodeAdSense" width="728" height="90" scrolling="no" frameborder="0" id="1359794061" name="1359794061" allowtransparency="true" class="igm" src="./Outlier Detection - RDataMining.com  R and Data Mining_files/ifr(1).html"></iframe></div></div></div><br></div></div></div>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</tbody></table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-subfooter"><div class="sites-subfooter-content"><div dir="ltr"><p style="TEXT-ALIGN:center"><span>©2015 Yanchang Zhao. &nbsp;</span><span> </span><span>&nbsp;&nbsp; &nbsp;</span>Contact: yanchang(at)rdatamining.com</p></div></div></div>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&continue=http://sites.google.com/site/rdatamining/examples/outlier-detection">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.rdatamining.com/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="./Outlier Detection - RDataMining.com  R and Data Mining_files/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+    
+        sites.core.Analytics.createTracker();
+        sites.core.Analytics.trackPageview();
+      
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-select-button',
+                        {"object":[{"id":"search-site","action":"/system/app/pages/search","label":"Search this site"},{"id":"search-web","action":"/system/app/pages/customSearch","label":"Search web"}]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("2bd", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+ //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+
+
+</body></html>

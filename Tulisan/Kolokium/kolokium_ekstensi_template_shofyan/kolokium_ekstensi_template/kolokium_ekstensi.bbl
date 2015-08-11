@@ -1,0 +1,491 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{}
+    \entry{Adinugroho2005}{book}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=de45d572f98f2042d8a28cde993a97c7}{Adinugroho}{A\bibinitperiod}{WC}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=afe6f8649dd20d24bba2ed6220519e3b}{INN}{I\bibinitperiod}{Suryadiputra}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2ef34d7a883b6b6341e451ae3332c726}{Saharjo}{S\bibinitperiod}{BH}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=aaec4220aff2badb0f4ddee524f35631}{Siboro}{S\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=de45d572f98f2042d8a28cde993a97c7}{Adinugroho}{A\bibinitperiod}{WC}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=afe6f8649dd20d24bba2ed6220519e3b}{INN}{I\bibinitperiod}{Suryadiputra}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2ef34d7a883b6b6341e451ae3332c726}{Saharjo}{S\bibinitperiod}{BH}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=aaec4220aff2badb0f4ddee524f35631}{Siboro}{S\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {Bogor(ID): Wetlands International-Indonesia Programme}%
+        {Wildlife Habibat Canada}%
+      }
+      \strng{namehash}{d928e8a16f33a1b88e6bc88fd69c9d74}
+      \strng{fullhash}{a092692c55f64c4ab76544ea9aaa23cd}
+      \field{sortinit}{A}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Panduan Pengendalian Kebakaran Hutan dan Lahan Gambut. Proyek Climate Changes, Forests and Peatlands in Indonesia}
+      \field{title}{Panduan Pengendalian Kebakaran Hutan dan Lahan Gambut. Proyek Climate Changes, Forests and Peatlands in Indonesia}
+      \field{year}{2005}
+    \endentry
+    \entry{Baehaki2014}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=90ed3030fbf159e2cb6cf650027a2416}{Baehaki}{B\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=90ed3030fbf159e2cb6cf650027a2416}{Baehaki}{B\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Departemen Ilmu Komputer, Institut Pertanian Bogor}%
+      }
+      \strng{namehash}{90ed3030fbf159e2cb6cf650027a2416}
+      \strng{fullhash}{90ed3030fbf159e2cb6cf650027a2416}
+      \field{sortinit}{B}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Deteksi pencilan data titik panas di provinsi Riau menggunakan algoritme clustering K-Means [skripsi]}
+      \field{pagetotal}{20}
+      \field{title}{Deteksi pencilan data titik panas di provinsi Riau menggunakan algoritme clustering K-Means [skripsi]}
+      \field{type}{Skripsi}
+      \field{year}{2014}
+    \endentry
+    \entry{Beunig2010}{proceedings}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=8d920d95af39996603c95db33a68e364}{Beunig}{B\bibinitperiod}{MM}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ea64ce807792622468b545cabd310c9e}{Hans\-Peter}{H\bibinithyphendelim P\bibinitperiod}{Kriegel}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0224841384bab92a06876eb5fc526d67}{T}{T\bibinitperiod}{Ng\bibnamedelima Raymond}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d98c9546bc38b56fb24dc610ff94e3a6}{J}{J\bibinitperiod}{Sander}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{4}{}{%
+        {{uniquename=0,hash=8d920d95af39996603c95db33a68e364}{Beunig}{B\bibinitperiod}{MM}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ea64ce807792622468b545cabd310c9e}{Hans\-Peter}{H\bibinithyphendelim P\bibinitperiod}{Kriegel}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0224841384bab92a06876eb5fc526d67}{T}{T\bibinitperiod}{Ng\bibnamedelima Raymond}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d98c9546bc38b56fb24dc610ff94e3a6}{J}{J\bibinitperiod}{Sander}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {New York (USA)}%
+      }
+      \strng{namehash}{bf303c44bd08953f4f6414063eae7228}
+      \strng{fullhash}{ac92a00a710c3bbd7eb9eb2aa13ad6a9}
+      \field{sortinit}{B}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labeltitle}{LOF: Identifying Density-Based Local Outliers}
+      \field{eventtitle}{ACM SIGMOD international conference on Management of data}
+      \field{title}{LOF: Identifying Density-Based Local Outliers}
+      \field{volume}{ACM SIGMOD Volume 29 Issue Pages 93\-104}
+      \field{year}{2000}
+      \warn{\item Datamodel: Entry 'Beunig2010' (pustaka.bib): Invalid format '2000-06/02	' of date field 'eventdate' - ignoring}
+    \endentry
+    \entry{Cahyadarena2014}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=f2853ed6cfe9e0288158346a7b186e19}{Cahyadarena}{C\bibinitperiod}{MB}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f2853ed6cfe9e0288158346a7b186e19}{Cahyadarena}{C\bibinitperiod}{MB}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Departemen Ilmu Komputer, Institut Pertanian Bogor}%
+      }
+      \strng{namehash}{f2853ed6cfe9e0288158346a7b186e19}
+      \strng{fullhash}{f2853ed6cfe9e0288158346a7b186e19}
+      \field{sortinit}{C}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Deteksi Pencilan Pada Data Titik Panas Menggunakan Clustering Berbasis Medoids [skripsi]}
+      \field{pagetotal}{31}
+      \field{title}{Deteksi Pencilan Pada Data Titik Panas Menggunakan Clustering Berbasis Medoids [skripsi]}
+      \field{type}{Skripsi}
+      \field{year}{2014}
+    \endentry
+    \entry{Guswanto2009}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=2f5fc5bade07a27a9ff2d685b27d4498}{Guswanto}{G\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=c10b3ac65523033536ba5b8cd808345d}{Heriyanto}{H\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=2f5fc5bade07a27a9ff2d685b27d4498}{Guswanto}{G\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=c10b3ac65523033536ba5b8cd808345d}{Heriyanto}{H\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{18c23dec4d0298ddeddfa44cca29a5f2}
+      \strng{fullhash}{18c23dec4d0298ddeddfa44cca29a5f2}
+      \field{sortinit}{G}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Operational Weather System for National Fire Danger Rating. Jurnal Meteorologi dan Geofisika}
+      \field{journaltitle}{Jurnal Meteorologi dan Geofisika}
+      \field{number}{2}
+      \field{title}{Operational Weather System for National Fire Danger Rating. Jurnal Meteorologi dan Geofisika}
+      \field{volume}{10}
+      \field{year}{2009}
+      \field{pages}{77\bibrangedash 87}
+    \endentry
+    \entry{Han2012}{book}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=7fc1f626087edf07f8df670944037429}{Han}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bbb121fce7be5f6b921f643e87353d35}{Kamber}{K\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=10534498eef6191ea9dd02cf10643141}{J}{J\bibinitperiod}{Pei}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=7fc1f626087edf07f8df670944037429}{Han}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bbb121fce7be5f6b921f643e87353d35}{Kamber}{K\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=10534498eef6191ea9dd02cf10643141}{J}{J\bibinitperiod}{Pei}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Massachusetts (US) : Morgan Kaufmann}%
+      }
+      \strng{namehash}{aaf5659bef3f886d5209e059381404b3}
+      \strng{fullhash}{3b3bfee2e927fa78c95322d877a0e167}
+      \field{sortinit}{H}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Data mining: concepts and techniques}
+      \field{title}{Data mining: concepts and techniques}
+      \field{year}{2012}
+    \endentry
+    \entry{Hasan1999}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=9581f52f736c3173469b80dc4522988b}{Hasan}{H\bibinitperiod}{MI}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9581f52f736c3173469b80dc4522988b}{Hasan}{H\bibinitperiod}{MI}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Jakarta (ID): Bumi aksara}%
+      }
+      \strng{namehash}{9581f52f736c3173469b80dc4522988b}
+      \strng{fullhash}{9581f52f736c3173469b80dc4522988b}
+      \field{sortinit}{H}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Pokok-Pokok Materi Statistik 1: Statistik Deskriptif}
+      \field{title}{Pokok-Pokok Materi Statistik 1: Statistik Deskriptif}
+      \field{year}{1999}
+    \endentry
+    \entry{Sizer2014}{book}{}
+      \name{labelname}{6}{}{%
+        {{uniquename=0,hash=73117505fb834dc38ab791d52284a969}{Sizer}{S\bibinitperiod}{N}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fba14484c0de15296dc39f63583e6497}{Anderson}{A\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=56957f6394b1e95c042748cc998f9b95}{Stolle}{S\bibinitperiod}{F}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9cce19a52f5dfbae32b9c5508d9e2747}{Minnemeyer}{M\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4fc78ac70a796a066c29754985431f92}{Higgins}{H\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d9b70c036ae3cdcb18b4a8ae43d28284}{A\bibnamedelima Leach}{A\bibinitperiod\bibinitdelim L\bibinitperiod}{A\bibnamedelima Utami}{A\bibinitperiod\bibinitdelim U\bibinitperiod}{}{}{A\bibnamedelima Alisjahbana}{A\bibinitperiod\bibinitdelim A\bibinitperiod}}%
+      }
+      \name{author}{6}{}{%
+        {{uniquename=0,hash=73117505fb834dc38ab791d52284a969}{Sizer}{S\bibinitperiod}{N}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fba14484c0de15296dc39f63583e6497}{Anderson}{A\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=56957f6394b1e95c042748cc998f9b95}{Stolle}{S\bibinitperiod}{F}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9cce19a52f5dfbae32b9c5508d9e2747}{Minnemeyer}{M\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4fc78ac70a796a066c29754985431f92}{Higgins}{H\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d9b70c036ae3cdcb18b4a8ae43d28284}{A\bibnamedelima Leach}{A\bibinitperiod\bibinitdelim L\bibinitperiod}{A\bibnamedelima Utami}{A\bibinitperiod\bibinitdelim U\bibinitperiod}{}{}{A\bibnamedelima Alisjahbana}{A\bibinitperiod\bibinitdelim A\bibinitperiod}}%
+      }
+      \list{publisher}{1}{%
+        {[diunduh 2015 17 Mei]. Tersedia pada http://www.wri.org/blog/2014/03/kebakaran-hutan-di-indonesia-mencapai-tingkat- tertinggi\-sejak\-kondisi\-darurat\-kabut}%
+      }
+      \strng{namehash}{f0e6725024bbd0610fe4fc567ba4efc1}
+      \strng{fullhash}{4e0357c92cc5b29ce9a4a8535e023dc0}
+      \field{sortinit}{S}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Kebakaran Hutan di Indonesia Mencapai Tingkat Tertinggi Sejak Kondisi Darurat Kabut Asap Juni 2013 [Internet]}
+      \field{title}{Kebakaran Hutan di Indonesia Mencapai Tingkat Tertinggi Sejak Kondisi Darurat Kabut Asap Juni 2013 [Internet]}
+      \field{year}{2014}
+    \endentry
+    \entry{Suwarsono2013}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=934e106780242e660a8e883943b1533b}{Suwarsono}{S\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=8284ab760184cb5b2856c87f34d05fa8}{Rokhmatuloh}{R\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=83e67616d78ab5bf35335bfc8d813283}{Waryono}{W\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=934e106780242e660a8e883943b1533b}{Suwarsono}{S\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=8284ab760184cb5b2856c87f34d05fa8}{Rokhmatuloh}{R\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=83e67616d78ab5bf35335bfc8d813283}{Waryono}{W\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f4ab58c1d77ad39a90c7a89657cac60b}
+      \strng{fullhash}{26e94242f823eabdf8a851ce494404a4}
+      \field{sortinit}{S}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Pengembangan Model Identifikasi Daerah Bekas Kebakaran Hutan dan Lahan (Burned Area) Menggunakan Citra MODIS di Kalimantan [Model Development of Burned Area Identification Using MODIS Imagery in Kalimantan]}
+      \field{journaltitle}{Jurnal Penginderaan Jauh}
+      \field{number}{2}
+      \field{title}{Pengembangan Model Identifikasi Daerah Bekas Kebakaran Hutan dan Lahan (Burned Area) Menggunakan Citra MODIS di Kalimantan [Model Development of Burned Area Identification Using MODIS Imagery in Kalimantan]}
+      \field{volume}{10}
+      \field{year}{2013}
+      \field{pages}{99\bibrangedash 112}
+    \endentry
+    \entry{Tacconi2003}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=d45772220feb894d79b0fa6036c08ac3}{Tacconi}{T\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d45772220feb894d79b0fa6036c08ac3}{Tacconi}{T\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Bogor(ID): Center For International Forestry Research}%
+      }
+      \strng{namehash}{d45772220feb894d79b0fa6036c08ac3}
+      \strng{fullhash}{d45772220feb894d79b0fa6036c08ac3}
+      \field{sortinit}{T}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Kebakaran Hutan di Indonesia: Penyebab, Biaya dan Implikasi Kebijakan [paper]}
+      \field{title}{Kebakaran Hutan di Indonesia: Penyebab, Biaya dan Implikasi Kebijakan [paper]}
+      \field{year}{2003}
+    \endentry
+  \endsortlist
+  \sortlist{entry}{nyt}
+    \entry{Adinugroho2005}{book}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=de45d572f98f2042d8a28cde993a97c7}{Adinugroho}{A\bibinitperiod}{WC}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=afe6f8649dd20d24bba2ed6220519e3b}{INN}{I\bibinitperiod}{Suryadiputra}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2ef34d7a883b6b6341e451ae3332c726}{Saharjo}{S\bibinitperiod}{BH}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=aaec4220aff2badb0f4ddee524f35631}{Siboro}{S\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=de45d572f98f2042d8a28cde993a97c7}{Adinugroho}{A\bibinitperiod}{WC}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=afe6f8649dd20d24bba2ed6220519e3b}{INN}{I\bibinitperiod}{Suryadiputra}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2ef34d7a883b6b6341e451ae3332c726}{Saharjo}{S\bibinitperiod}{BH}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=aaec4220aff2badb0f4ddee524f35631}{Siboro}{S\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {Bogor(ID): Wetlands International-Indonesia Programme}%
+        {Wildlife Habibat Canada}%
+      }
+      \strng{namehash}{d928e8a16f33a1b88e6bc88fd69c9d74}
+      \strng{fullhash}{a092692c55f64c4ab76544ea9aaa23cd}
+      \field{sortinit}{A}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Panduan Pengendalian Kebakaran Hutan dan Lahan Gambut. Proyek Climate Changes, Forests and Peatlands in Indonesia}
+      \field{title}{Panduan Pengendalian Kebakaran Hutan dan Lahan Gambut. Proyek Climate Changes, Forests and Peatlands in Indonesia}
+      \field{year}{2005}
+    \endentry
+    \entry{Baehaki2014}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=90ed3030fbf159e2cb6cf650027a2416}{Baehaki}{B\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=90ed3030fbf159e2cb6cf650027a2416}{Baehaki}{B\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Departemen Ilmu Komputer, Institut Pertanian Bogor}%
+      }
+      \strng{namehash}{90ed3030fbf159e2cb6cf650027a2416}
+      \strng{fullhash}{90ed3030fbf159e2cb6cf650027a2416}
+      \field{sortinit}{B}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Deteksi pencilan data titik panas di provinsi Riau menggunakan algoritme clustering K-Means [skripsi]}
+      \field{pagetotal}{20}
+      \field{title}{Deteksi pencilan data titik panas di provinsi Riau menggunakan algoritme clustering K-Means [skripsi]}
+      \field{type}{Skripsi}
+      \field{year}{2014}
+    \endentry
+    \entry{Beunig2010}{proceedings}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=8d920d95af39996603c95db33a68e364}{Beunig}{B\bibinitperiod}{MM}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ea64ce807792622468b545cabd310c9e}{Hans\-Peter}{H\bibinithyphendelim P\bibinitperiod}{Kriegel}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0224841384bab92a06876eb5fc526d67}{T}{T\bibinitperiod}{Ng\bibnamedelima Raymond}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d98c9546bc38b56fb24dc610ff94e3a6}{J}{J\bibinitperiod}{Sander}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{4}{}{%
+        {{uniquename=0,hash=8d920d95af39996603c95db33a68e364}{Beunig}{B\bibinitperiod}{MM}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ea64ce807792622468b545cabd310c9e}{Hans\-Peter}{H\bibinithyphendelim P\bibinitperiod}{Kriegel}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0224841384bab92a06876eb5fc526d67}{T}{T\bibinitperiod}{Ng\bibnamedelima Raymond}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d98c9546bc38b56fb24dc610ff94e3a6}{J}{J\bibinitperiod}{Sander}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {New York (USA)}%
+      }
+      \strng{namehash}{bf303c44bd08953f4f6414063eae7228}
+      \strng{fullhash}{ac92a00a710c3bbd7eb9eb2aa13ad6a9}
+      \field{sortinit}{B}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labeltitle}{LOF: Identifying Density-Based Local Outliers}
+      \field{eventtitle}{ACM SIGMOD international conference on Management of data}
+      \field{title}{LOF: Identifying Density-Based Local Outliers}
+      \field{volume}{ACM SIGMOD Volume 29 Issue Pages 93\-104}
+      \field{year}{2000}
+      \warn{\item Datamodel: Entry 'Beunig2010' (pustaka.bib): Invalid format '2000-06/02	' of date field 'eventdate' - ignoring}
+    \endentry
+    \entry{Cahyadarena2014}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=f2853ed6cfe9e0288158346a7b186e19}{Cahyadarena}{C\bibinitperiod}{MB}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f2853ed6cfe9e0288158346a7b186e19}{Cahyadarena}{C\bibinitperiod}{MB}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Departemen Ilmu Komputer, Institut Pertanian Bogor}%
+      }
+      \strng{namehash}{f2853ed6cfe9e0288158346a7b186e19}
+      \strng{fullhash}{f2853ed6cfe9e0288158346a7b186e19}
+      \field{sortinit}{C}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Deteksi Pencilan Pada Data Titik Panas Menggunakan Clustering Berbasis Medoids [skripsi]}
+      \field{pagetotal}{31}
+      \field{title}{Deteksi Pencilan Pada Data Titik Panas Menggunakan Clustering Berbasis Medoids [skripsi]}
+      \field{type}{Skripsi}
+      \field{year}{2014}
+    \endentry
+    \entry{Guswanto2009}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=2f5fc5bade07a27a9ff2d685b27d4498}{Guswanto}{G\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=c10b3ac65523033536ba5b8cd808345d}{Heriyanto}{H\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=2f5fc5bade07a27a9ff2d685b27d4498}{Guswanto}{G\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=c10b3ac65523033536ba5b8cd808345d}{Heriyanto}{H\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{18c23dec4d0298ddeddfa44cca29a5f2}
+      \strng{fullhash}{18c23dec4d0298ddeddfa44cca29a5f2}
+      \field{sortinit}{G}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Operational Weather System for National Fire Danger Rating. Jurnal Meteorologi dan Geofisika}
+      \field{journaltitle}{Jurnal Meteorologi dan Geofisika}
+      \field{number}{2}
+      \field{title}{Operational Weather System for National Fire Danger Rating. Jurnal Meteorologi dan Geofisika}
+      \field{volume}{10}
+      \field{year}{2009}
+      \field{pages}{77\bibrangedash 87}
+    \endentry
+    \entry{Han2012}{book}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=7fc1f626087edf07f8df670944037429}{Han}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bbb121fce7be5f6b921f643e87353d35}{Kamber}{K\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=10534498eef6191ea9dd02cf10643141}{J}{J\bibinitperiod}{Pei}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=7fc1f626087edf07f8df670944037429}{Han}{H\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bbb121fce7be5f6b921f643e87353d35}{Kamber}{K\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=10534498eef6191ea9dd02cf10643141}{J}{J\bibinitperiod}{Pei}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Massachusetts (US) : Morgan Kaufmann}%
+      }
+      \strng{namehash}{aaf5659bef3f886d5209e059381404b3}
+      \strng{fullhash}{3b3bfee2e927fa78c95322d877a0e167}
+      \field{sortinit}{H}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Data mining: concepts and techniques}
+      \field{title}{Data mining: concepts and techniques}
+      \field{year}{2012}
+    \endentry
+    \entry{Hasan1999}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=9581f52f736c3173469b80dc4522988b}{Hasan}{H\bibinitperiod}{MI}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9581f52f736c3173469b80dc4522988b}{Hasan}{H\bibinitperiod}{MI}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Jakarta (ID): Bumi aksara}%
+      }
+      \strng{namehash}{9581f52f736c3173469b80dc4522988b}
+      \strng{fullhash}{9581f52f736c3173469b80dc4522988b}
+      \field{sortinit}{H}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Pokok-Pokok Materi Statistik 1: Statistik Deskriptif}
+      \field{title}{Pokok-Pokok Materi Statistik 1: Statistik Deskriptif}
+      \field{year}{1999}
+    \endentry
+    \entry{Sizer2014}{book}{}
+      \name{labelname}{6}{}{%
+        {{uniquename=0,hash=73117505fb834dc38ab791d52284a969}{Sizer}{S\bibinitperiod}{N}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fba14484c0de15296dc39f63583e6497}{Anderson}{A\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=56957f6394b1e95c042748cc998f9b95}{Stolle}{S\bibinitperiod}{F}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9cce19a52f5dfbae32b9c5508d9e2747}{Minnemeyer}{M\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4fc78ac70a796a066c29754985431f92}{Higgins}{H\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d9b70c036ae3cdcb18b4a8ae43d28284}{A\bibnamedelima Leach}{A\bibinitperiod\bibinitdelim L\bibinitperiod}{A\bibnamedelima Utami}{A\bibinitperiod\bibinitdelim U\bibinitperiod}{}{}{A\bibnamedelima Alisjahbana}{A\bibinitperiod\bibinitdelim A\bibinitperiod}}%
+      }
+      \name{author}{6}{}{%
+        {{uniquename=0,hash=73117505fb834dc38ab791d52284a969}{Sizer}{S\bibinitperiod}{N}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fba14484c0de15296dc39f63583e6497}{Anderson}{A\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=56957f6394b1e95c042748cc998f9b95}{Stolle}{S\bibinitperiod}{F}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9cce19a52f5dfbae32b9c5508d9e2747}{Minnemeyer}{M\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4fc78ac70a796a066c29754985431f92}{Higgins}{H\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d9b70c036ae3cdcb18b4a8ae43d28284}{A\bibnamedelima Leach}{A\bibinitperiod\bibinitdelim L\bibinitperiod}{A\bibnamedelima Utami}{A\bibinitperiod\bibinitdelim U\bibinitperiod}{}{}{A\bibnamedelima Alisjahbana}{A\bibinitperiod\bibinitdelim A\bibinitperiod}}%
+      }
+      \list{publisher}{1}{%
+        {[diunduh 2015 17 Mei]. Tersedia pada http://www.wri.org/blog/2014/03/kebakaran-hutan-di-indonesia-mencapai-tingkat- tertinggi\-sejak\-kondisi\-darurat\-kabut}%
+      }
+      \strng{namehash}{f0e6725024bbd0610fe4fc567ba4efc1}
+      \strng{fullhash}{4e0357c92cc5b29ce9a4a8535e023dc0}
+      \field{sortinit}{S}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Kebakaran Hutan di Indonesia Mencapai Tingkat Tertinggi Sejak Kondisi Darurat Kabut Asap Juni 2013 [Internet]}
+      \field{title}{Kebakaran Hutan di Indonesia Mencapai Tingkat Tertinggi Sejak Kondisi Darurat Kabut Asap Juni 2013 [Internet]}
+      \field{year}{2014}
+    \endentry
+    \entry{Suwarsono2013}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=934e106780242e660a8e883943b1533b}{Suwarsono}{S\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=8284ab760184cb5b2856c87f34d05fa8}{Rokhmatuloh}{R\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=83e67616d78ab5bf35335bfc8d813283}{Waryono}{W\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=934e106780242e660a8e883943b1533b}{Suwarsono}{S\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=8284ab760184cb5b2856c87f34d05fa8}{Rokhmatuloh}{R\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=83e67616d78ab5bf35335bfc8d813283}{Waryono}{W\bibinitperiod}{T}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f4ab58c1d77ad39a90c7a89657cac60b}
+      \strng{fullhash}{26e94242f823eabdf8a851ce494404a4}
+      \field{sortinit}{S}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Pengembangan Model Identifikasi Daerah Bekas Kebakaran Hutan dan Lahan (Burned Area) Menggunakan Citra MODIS di Kalimantan [Model Development of Burned Area Identification Using MODIS Imagery in Kalimantan]}
+      \field{journaltitle}{Jurnal Penginderaan Jauh}
+      \field{number}{2}
+      \field{title}{Pengembangan Model Identifikasi Daerah Bekas Kebakaran Hutan dan Lahan (Burned Area) Menggunakan Citra MODIS di Kalimantan [Model Development of Burned Area Identification Using MODIS Imagery in Kalimantan]}
+      \field{volume}{10}
+      \field{year}{2013}
+      \field{pages}{99\bibrangedash 112}
+    \endentry
+    \entry{Tacconi2003}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=d45772220feb894d79b0fa6036c08ac3}{Tacconi}{T\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d45772220feb894d79b0fa6036c08ac3}{Tacconi}{T\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Bogor(ID): Center For International Forestry Research}%
+      }
+      \strng{namehash}{d45772220feb894d79b0fa6036c08ac3}
+      \strng{fullhash}{d45772220feb894d79b0fa6036c08ac3}
+      \field{sortinit}{T}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Kebakaran Hutan di Indonesia: Penyebab, Biaya dan Implikasi Kebijakan [paper]}
+      \field{title}{Kebakaran Hutan di Indonesia: Penyebab, Biaya dan Implikasi Kebijakan [paper]}
+      \field{year}{2003}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

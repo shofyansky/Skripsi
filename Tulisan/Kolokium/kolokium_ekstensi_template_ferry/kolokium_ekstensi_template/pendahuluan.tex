@@ -1,0 +1,38 @@
+%----------------------------------------------------------------------------------------
+%	PENDAHULUAN
+%----------------------------------------------------------------------------------------
+\section*{PENDAHULUAN} % Sub Judul PENDAHULUAN
+% Tuliskan isi Pendahuluan di bagian bawah ini. 
+% Jika ingin menambahkan Sub-Sub Judul lainnya, silakan melihat contoh yang ada.
+% Sub-sub Judul 
+\subsection*{Latar Belakang}
+Bioinformatika merupakan salah satu cabang ilmu yang memiliki peranan penting dalam kemajuan ilmu biologi, salah satunya adalah analisis sekuen \textit{deoxyribo nucleid acid} (DNA). DNA merupakan pembawa informasi genetik dari makhluk hidup. DNA merupakan rantai ganda dari nukleotida yang diikat dalam struktur \textit{helix} dikenal dengan \textit{double helix}.  Terdapat 4 basa utama dalam setiap nukleotida yaitu: \textit{adenine} (A), \textit{cytosin} (C), \textit{thymine} (T), dan \textit{guanine} (G).
+
+Sekuen DNA didapatkan dengan memotong DNA dari suatu organisme yang diuraikan dan dipotong-potong menjadi \textit{reads}. \textit{Reads} tersebut berisi urutan huruf-huruf yang mewakili struktur primer dari molekul DNA. Sekuen DNA dalam bentuk \textit{file} akan disimpan dalam format FASTA. Dari \textit{reads} tersebut, dapat dilihat kode genetik setiap makhluk hidup. Variasi urutan basa setiap makhluk hidup memiliki kemiripan. Oleh karena itu, untuk mengetahui kekerabatan antarspesies diperlukan pengelompokan berdasarkan kesamaan ciri fiturnya.
+
+Proses \textit{binning} pada sekuen DNA akan dilakukan untuk dikelompokan. Proses \textit{binning} dapat dilakukan dengan menggunakan metode \textit{unsupervised}, yaitu dengan pengelompokan. Pengelompokan adalah proses pembelajaran \textit{unsupervised} terhadap suatu pattern untuk dijadikan beberapa kelompok berdasarkan kemiripan (\citeauthor{JAIN1999} \cite*{JAIN1999}). Teknik pengelompokan digunakan untuk melihat kemiripan dengan melihat hasil dendogram dengan menggunakan metode hierarki. Metode hierarki juga dibagi menjadi beberapa macam seperti: \textit{single linkage}, \textit{complete linkage}, \textit{average linkage},  dan \textit{average group linkage}. Penelitian tentang \textit{single link} pada sekuens DNA pernah dilakukan oleh \citeauthor{TAMSIN2013} (\cite*{TAMSIN2013}). Pada penelitian tersebut, ekstraksi ciri yang digunakan adalah \textit{feature vector} dan tingkat kemiripan menggunakan \textit{cosine similarity}. Dari 8 studi kasus yang masing-masing terdiri dari 5 percobaan menggunakan 50 data sekuen DNA, didapatkan akurasi rata-rata 86.7$\%$ dengan nilai akurasi tertinggi 100$\%$ dan terendah 70$\%$. 
+
+Sekuen DNA merupakan yang data yang sangat besar yang bahkan dapat mencapai ratusan megabase data (\citeauthor{KUNIN2008} \cite*{KUNIN2008}). Salah satu solusi untuk mengatasi hal tersebut adalah pemodelan \textit{map-reduce}. \textit{Map-reduce} merupakan model pemrograman yang penerapannya digunakan untuk memproses data yang berukuran besar  (\citeauthor{DEAN2004} \cite*{DEAN2004}). \textit{Map-reduce} diimplementasikan dalam \textit{platform} hadoop. Hadoop adalah \textit{framework} yang menangani data berskala besar dan digunakan untuk kluster pada Linux dengan tujuan untuk analisis data (\citeauthor{TAYLOR2010} \cite*{TAYLOR2010}).  Selain itu, penelitian terkait juga pernah dilakukan oleh \citeauthor{RASHEED2013} (\cite*{RASHEED2013}) yang menggunakan teknik pengelompokan dengan metode MC-MinH. Penelitian yang dilakukan berfokus pada evaluasi pengelompokan dan waktu komputasi. Hasilnya, sekuen hasil pengelompokan sama dengan sekuen yang ada pada metagenom.
+
+Pada penelitian ini, penulis akan mengimplementasikan \textit{hierachical clustering} yang sama dengan yang dilakukan oleh \citeauthor{TAMSIN2013} (\cite*{TAMSIN2013}) dengan menggunakan \textit{single link} dengan \textit{k-mers} sebagai ekstrasi ciri. Namun, penulis akan menggunakan Hadoop dengan pemodelan \textit{map-reduce}. Dalam penelitian, ini juga ingin dilihat evalusi dari hasil pengelompokan dan waktu komputasi.
+
+% Sub-sub perumusan masalah
+\subsection*{Perumusan Masalah}
+Perumasan masalah pada penelitian ini adalah penerapan \textit{map-reduce} untuk pengelompokan sekuen DNA dengan menggunakan metode \textit{single link}. Hasil dari pengelompokan akan dihitung waktu komputasinya.
+
+% Sub-sub Judul 
+\subsection*{Tujuan}
+Tujuan dari penelitian ini adalah untuk mengimplementasikan pemodelan \textit{map-reduce} untuk pengelompokan sekuen DNA dengan \textit{single link}, melihat hasil pengelompokan sekuen DNA dan mengevaluasi hasil pengelompokan dengan metode \textit{single link} dan waktu komputasi
+
+\subsection*{Ruang Lingkup}
+Ruang lingkup penelitian adalah:
+\begin{enumerate}[noitemsep] 
+\item Penelitian ini menitik beratkan pada tahap pengelompokan.
+\item Data sekuen DNA yang digunakan dengan format FASTA.
+\item Data sekuen yang digunakan adalah DNA bakteri \textit{complete sequence}.
+\item Data hasil simulasi bersifat bebas \textit{error}.
+\item Bahasa pemrograman yang digunakan adalah Java.
+\end{enumerate}
+
+\subsection*{Manfaat}
+Manfaat dari penelitian ini adalah sebagai pertimbangan untuk penerapan teknik pengelompokan dengan pemodelan \textit{map-reduce} pada sekuen DNA.

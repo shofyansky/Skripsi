@@ -1,0 +1,4 @@
+CREATE TABLE hotspotgambut as
+select h.gid as gid, h.geom as geom, h.longitude as longitude, h.latitude as latitude, h.acq_date as tanggal, h.acq_time as acq_time, h.confidence as confidence,g.legend as legend, g.ketebalan as ketebalan, g.landuse as landuse
+from titikpanasmcd14ml_s as h, gambutsumatera1 as g
+where st_within(h.geom, g.geom)

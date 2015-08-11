@@ -1,0 +1,349 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{}
+    \entry{DEAN2004}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=d344df02661ad14c26e86c5871d77951}{Dean}{D\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=61406081ee9c4d86126d6ca1792b0e43}{Ghemawat}{G\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=d344df02661ad14c26e86c5871d77951}{Dean}{D\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=61406081ee9c4d86126d6ca1792b0e43}{Ghemawat}{G\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{124ab255a153c3390c70d1c1945a1553}
+      \strng{fullhash}{124ab255a153c3390c70d1c1945a1553}
+      \field{sortinit}{D}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labeltitle}{MapReduce: simplified data processing on large clusters. OSDI'04 Proceedings of the 6th conference on Symposium on Opearting Systems Design and Implementation}
+      \field{journaltitle}{International Journal of Enggineering Science Invention}
+      \field{title}{MapReduce: simplified data processing on large clusters. OSDI'04 Proceedings of the 6th conference on Symposium on Opearting Systems Design and Implementation}
+      \field{urlday}{10}
+      \field{urlmonth}{05}
+      \field{urlyear}{2015}
+      \field{year}{2004}
+      \field{pages}{10\bibrangedash 100}
+      \verb{url}
+      \verb http://static.googleusercontent.com/media/research.google.com
+      \endverb
+    \endentry
+    \entry{JAIN1999}{book}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=5158eda7f50d354c819ac47226b8fb7b}{Jain}{J\bibinitperiod}{AK}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a0a2bc14b7a24c53ad3f70d4b5e359f}{Murty}{M\bibinitperiod}{MN}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1abb6cbb504b55394f7dd0bd6d7049f4}{Flynn}{F\bibinitperiod}{PJ}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=5158eda7f50d354c819ac47226b8fb7b}{Jain}{J\bibinitperiod}{AK}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a0a2bc14b7a24c53ad3f70d4b5e359f}{Murty}{M\bibinitperiod}{MN}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1abb6cbb504b55394f7dd0bd6d7049f4}{Flynn}{F\bibinitperiod}{PJ}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {New York (US): ACM Computing Surveys}%
+      }
+      \strng{namehash}{adec49a85363c6eefdf272458049e2d4}
+      \strng{fullhash}{304a8d5abb701718278b83739b30917b}
+      \field{sortinit}{J}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Data Clustering: a Review}
+      \field{title}{Data Clustering: a Review}
+      \field{year}{1999}
+    \endentry
+    \entry{KUNIN2008}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=82d58427babadf16c80be14ba42d18fc}{Kunin}{K\bibinitperiod}{V}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9a0cb0d4951821f791af3f47e1738add}{Copeland}{C\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9badbad133c4a703e8e5424cf0c64e64}{Lapidus}{L\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dfd6e35d60850c531238b177fc5987f4}{Mavromatis}{M\bibinitperiod}{K}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d1f4389b2493bae8d8b4ecb109cc3c7e}{Hugenholtz}{H\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=82d58427babadf16c80be14ba42d18fc}{Kunin}{K\bibinitperiod}{V}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9a0cb0d4951821f791af3f47e1738add}{Copeland}{C\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9badbad133c4a703e8e5424cf0c64e64}{Lapidus}{L\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dfd6e35d60850c531238b177fc5987f4}{Mavromatis}{M\bibinitperiod}{K}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d1f4389b2493bae8d8b4ecb109cc3c7e}{Hugenholtz}{H\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{64f86f6b0f4d1b9f65ca67d971ed3564}
+      \strng{fullhash}{8074fc1f52f8aa9832c0ae8c3b19ee91}
+      \field{sortinit}{K}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labeltitle}{A Bioinformatician’s Guide to Metagenomics}
+      \field{journaltitle}{Microbiology and Molecular Biology Reviews}
+      \field{number}{4}
+      \field{title}{A Bioinformatician’s Guide to Metagenomics}
+      \field{volume}{72}
+      \field{year}{2008}
+      \field{pages}{557\bibrangedash 578}
+    \endentry
+    \entry{LAROSE2005}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=f989e8d9aee2f711e3f7e36ac48f9894}{Larose}{L\bibinitperiod}{DT}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f989e8d9aee2f711e3f7e36ac48f9894}{Larose}{L\bibinitperiod}{DT}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Jersey (US): J Wiley}%
+      }
+      \strng{namehash}{f989e8d9aee2f711e3f7e36ac48f9894}
+      \strng{fullhash}{f989e8d9aee2f711e3f7e36ac48f9894}
+      \field{sortinit}{L}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Discovering Knowledge in Data: an Introduction to Data Mining}
+      \field{title}{Discovering Knowledge in Data: an Introduction to Data Mining}
+      \field{year}{2005}
+    \endentry
+    \entry{RASHEED2013}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=9afccfd9fb6fb32105579d6c99543621}{Rasheed}{R\bibinitperiod}{Z}{Z\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8568c26bacbb1f89b29ff86fbb1a19cb}{Rangwala}{R\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=9afccfd9fb6fb32105579d6c99543621}{Rasheed}{R\bibinitperiod}{Z}{Z\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8568c26bacbb1f89b29ff86fbb1a19cb}{Rangwala}{R\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1268c115d5094fecc19ad8342e73b0a8}
+      \strng{fullhash}{1268c115d5094fecc19ad8342e73b0a8}
+      \field{sortinit}{R}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{A map-reduce framework for clustering metagenomes}
+      \field{journaltitle}{HiCOMB 2013 Online Proceedings Twelfth IEEE International Workshop on High Performance Computational Biology}
+      \field{title}{A map-reduce framework for clustering metagenomes}
+      \field{urlday}{10}
+      \field{urlmonth}{05}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \field{pages}{549\bibrangedash 558}
+      \verb{url}
+      \verb http://www.hicomb.org/HiCOMB2013/papers/HICOMB2013-06.pdf
+      \endverb
+    \endentry
+    \entry{TAMSIN2013}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=13a3e99713b10a5257c435ad14dc8052}{Tamsin}{T\bibinitperiod}{AH}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=13a3e99713b10a5257c435ad14dc8052}{Tamsin}{T\bibinitperiod}{AH}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Departemen Ilmu Komputer, Institut Pertanian Bogor}%
+      }
+      \strng{namehash}{13a3e99713b10a5257c435ad14dc8052}
+      \strng{fullhash}{13a3e99713b10a5257c435ad14dc8052}
+      \field{sortinit}{T}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Pengelompokan Sekuen DNA Menggunakan Algoritme Single Link dan Feature Vectors}
+      \field{pagetotal}{37}
+      \field{title}{Pengelompokan Sekuen DNA Menggunakan Algoritme Single Link dan Feature Vectors}
+      \field{type}{Skripsi}
+      \field{year}{2013}
+    \endentry
+    \entry{TAYLOR2010}{proceedings}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=f9efdf83038d14c5302b7552117b383f}{Taylor}{T\bibinitperiod}{RC}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{uniquename=0,hash=f9efdf83038d14c5302b7552117b383f}{Taylor}{T\bibinitperiod}{RC}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f9efdf83038d14c5302b7552117b383f}
+      \strng{fullhash}{f9efdf83038d14c5302b7552117b383f}
+      \field{sortinit}{T}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labeltitle}{An Overview of the Hadoop Framework and its Current Applications in Bioinformatics}
+      \field{eventtitle}{The 11th Annual Bioinformatics Open Source Conference (BOSC)}
+      \field{title}{An Overview of the Hadoop Framework and its Current Applications in Bioinformatics}
+      \field{year}{2010}
+      \warn{\item Datamodel: Entry 'TAYLOR2010' (pustaka.bib): Invalid format '2010-09/10	' of date field 'eventdate' - ignoring}
+    \endentry
+  \endsortlist
+  \sortlist{entry}{nyt}
+    \entry{DEAN2004}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=d344df02661ad14c26e86c5871d77951}{Dean}{D\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=61406081ee9c4d86126d6ca1792b0e43}{Ghemawat}{G\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=d344df02661ad14c26e86c5871d77951}{Dean}{D\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=61406081ee9c4d86126d6ca1792b0e43}{Ghemawat}{G\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{124ab255a153c3390c70d1c1945a1553}
+      \strng{fullhash}{124ab255a153c3390c70d1c1945a1553}
+      \field{sortinit}{D}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labeltitle}{MapReduce: simplified data processing on large clusters. OSDI'04 Proceedings of the 6th conference on Symposium on Opearting Systems Design and Implementation}
+      \field{journaltitle}{International Journal of Enggineering Science Invention}
+      \field{title}{MapReduce: simplified data processing on large clusters. OSDI'04 Proceedings of the 6th conference on Symposium on Opearting Systems Design and Implementation}
+      \field{urlday}{10}
+      \field{urlmonth}{05}
+      \field{urlyear}{2015}
+      \field{year}{2004}
+      \field{pages}{10\bibrangedash 100}
+      \verb{url}
+      \verb http://static.googleusercontent.com/media/research.google.com
+      \endverb
+    \endentry
+    \entry{JAIN1999}{book}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=5158eda7f50d354c819ac47226b8fb7b}{Jain}{J\bibinitperiod}{AK}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a0a2bc14b7a24c53ad3f70d4b5e359f}{Murty}{M\bibinitperiod}{MN}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1abb6cbb504b55394f7dd0bd6d7049f4}{Flynn}{F\bibinitperiod}{PJ}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=5158eda7f50d354c819ac47226b8fb7b}{Jain}{J\bibinitperiod}{AK}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a0a2bc14b7a24c53ad3f70d4b5e359f}{Murty}{M\bibinitperiod}{MN}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1abb6cbb504b55394f7dd0bd6d7049f4}{Flynn}{F\bibinitperiod}{PJ}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {New York (US): ACM Computing Surveys}%
+      }
+      \strng{namehash}{adec49a85363c6eefdf272458049e2d4}
+      \strng{fullhash}{304a8d5abb701718278b83739b30917b}
+      \field{sortinit}{J}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Data Clustering: a Review}
+      \field{title}{Data Clustering: a Review}
+      \field{year}{1999}
+    \endentry
+    \entry{KUNIN2008}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=82d58427babadf16c80be14ba42d18fc}{Kunin}{K\bibinitperiod}{V}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9a0cb0d4951821f791af3f47e1738add}{Copeland}{C\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9badbad133c4a703e8e5424cf0c64e64}{Lapidus}{L\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dfd6e35d60850c531238b177fc5987f4}{Mavromatis}{M\bibinitperiod}{K}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d1f4389b2493bae8d8b4ecb109cc3c7e}{Hugenholtz}{H\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=82d58427babadf16c80be14ba42d18fc}{Kunin}{K\bibinitperiod}{V}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9a0cb0d4951821f791af3f47e1738add}{Copeland}{C\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9badbad133c4a703e8e5424cf0c64e64}{Lapidus}{L\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dfd6e35d60850c531238b177fc5987f4}{Mavromatis}{M\bibinitperiod}{K}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d1f4389b2493bae8d8b4ecb109cc3c7e}{Hugenholtz}{H\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{64f86f6b0f4d1b9f65ca67d971ed3564}
+      \strng{fullhash}{8074fc1f52f8aa9832c0ae8c3b19ee91}
+      \field{sortinit}{K}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labeltitle}{A Bioinformatician’s Guide to Metagenomics}
+      \field{journaltitle}{Microbiology and Molecular Biology Reviews}
+      \field{number}{4}
+      \field{title}{A Bioinformatician’s Guide to Metagenomics}
+      \field{volume}{72}
+      \field{year}{2008}
+      \field{pages}{557\bibrangedash 578}
+    \endentry
+    \entry{LAROSE2005}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=f989e8d9aee2f711e3f7e36ac48f9894}{Larose}{L\bibinitperiod}{DT}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f989e8d9aee2f711e3f7e36ac48f9894}{Larose}{L\bibinitperiod}{DT}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Jersey (US): J Wiley}%
+      }
+      \strng{namehash}{f989e8d9aee2f711e3f7e36ac48f9894}
+      \strng{fullhash}{f989e8d9aee2f711e3f7e36ac48f9894}
+      \field{sortinit}{L}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Discovering Knowledge in Data: an Introduction to Data Mining}
+      \field{title}{Discovering Knowledge in Data: an Introduction to Data Mining}
+      \field{year}{2005}
+    \endentry
+    \entry{RASHEED2013}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=9afccfd9fb6fb32105579d6c99543621}{Rasheed}{R\bibinitperiod}{Z}{Z\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8568c26bacbb1f89b29ff86fbb1a19cb}{Rangwala}{R\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=9afccfd9fb6fb32105579d6c99543621}{Rasheed}{R\bibinitperiod}{Z}{Z\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8568c26bacbb1f89b29ff86fbb1a19cb}{Rangwala}{R\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1268c115d5094fecc19ad8342e73b0a8}
+      \strng{fullhash}{1268c115d5094fecc19ad8342e73b0a8}
+      \field{sortinit}{R}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{A map-reduce framework for clustering metagenomes}
+      \field{journaltitle}{HiCOMB 2013 Online Proceedings Twelfth IEEE International Workshop on High Performance Computational Biology}
+      \field{title}{A map-reduce framework for clustering metagenomes}
+      \field{urlday}{10}
+      \field{urlmonth}{05}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \field{pages}{549\bibrangedash 558}
+      \verb{url}
+      \verb http://www.hicomb.org/HiCOMB2013/papers/HICOMB2013-06.pdf
+      \endverb
+    \endentry
+    \entry{TAMSIN2013}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=13a3e99713b10a5257c435ad14dc8052}{Tamsin}{T\bibinitperiod}{AH}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=13a3e99713b10a5257c435ad14dc8052}{Tamsin}{T\bibinitperiod}{AH}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Departemen Ilmu Komputer, Institut Pertanian Bogor}%
+      }
+      \strng{namehash}{13a3e99713b10a5257c435ad14dc8052}
+      \strng{fullhash}{13a3e99713b10a5257c435ad14dc8052}
+      \field{sortinit}{T}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Pengelompokan Sekuen DNA Menggunakan Algoritme Single Link dan Feature Vectors}
+      \field{pagetotal}{37}
+      \field{title}{Pengelompokan Sekuen DNA Menggunakan Algoritme Single Link dan Feature Vectors}
+      \field{type}{Skripsi}
+      \field{year}{2013}
+    \endentry
+    \entry{TAYLOR2010}{proceedings}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=f9efdf83038d14c5302b7552117b383f}{Taylor}{T\bibinitperiod}{RC}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{uniquename=0,hash=f9efdf83038d14c5302b7552117b383f}{Taylor}{T\bibinitperiod}{RC}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f9efdf83038d14c5302b7552117b383f}
+      \strng{fullhash}{f9efdf83038d14c5302b7552117b383f}
+      \field{sortinit}{T}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labeltitle}{An Overview of the Hadoop Framework and its Current Applications in Bioinformatics}
+      \field{eventtitle}{The 11th Annual Bioinformatics Open Source Conference (BOSC)}
+      \field{title}{An Overview of the Hadoop Framework and its Current Applications in Bioinformatics}
+      \field{year}{2010}
+      \warn{\item Datamodel: Entry 'TAYLOR2010' (pustaka.bib): Invalid format '2010-09/10	' of date field 'eventdate' - ignoring}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

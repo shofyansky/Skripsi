@@ -1,0 +1,40 @@
+%----------------------------------------------------------------------------------------
+%	PENDAHULUAN
+%----------------------------------------------------------------------------------------
+\section*{PENDAHULUAN} % Sub Judul PENDAHULUAN
+% Tuliskan isi Pendahuluan di bagian bawah ini. 
+% Jika ingin menambahkan Sub-Sub Judul lainnya, silakan melihat contoh yang ada.
+% Sub-sub Judul 
+\subsection*{Latar Belakang}
+Indonesia mengalami kebakaran hutan yang signifikan. Pada tahun 2013 World Resources Institute (WRI)  meneliti tren historis titik panas di Pulau Sumatera menggunakan data titik panas aktif NASA pada 13-30 Juni 2013 terjadi 2643 total jumlah peringatan titik panas. Tahun berikutnya Pada  20 Februari hingga 11 Maret tahun 2014 titik panas meningkat menjadi 3101 peringatan titik panas (Sizer et al. 2014). 
+
+Kebakaran hutan dapat mengakibatkan pencemaran kabut asap, emisi karbon, degradasi dan deforesasi hutan yang mengakibatkan hilangnya hasil hutan dan berbagai jasa lingkungan yang diberikan hutan seperti kayu, hasil hutan non- kayu, dan keanekaragaman hayati, serta kerugian di sektor pedesaan contohnya dampak kabut asap pada hasil produksi pertanian  (Tacconi 2003).
+
+Data titik panas dapat dijadikan sebagai salah satu indikator tentang kemungkinan terjadinya kebakaran hutan (Adinugroho et al. 2005) sehingga dengan menganalisis data titik panas dapat diketahui langkah yang dapat diambil oleh pihak terkait. Diantara analisis yang dapat dilakukan ialah deteksi pencilan titik panas. 
+
+Beberapa penelitian terkait deteksi pencilan sudah dilakukan menggunakan algoritme clustering k-means (Baehaki 2014) dengan Rata-rata pencilan yang terdeteksi adalah sebesar 481.22 titik panas. Frekuensi titik panas minimum yang terdeteksi sebagai pencilan sebesar 284 titik panas dan terbesar adalah 1118 titik panas. Penelitian kedua menggunakan clustering berbasis medoids yaitu PAM dan CLARA (Cahyadarena 2014)  . Hasil algoritme PAM pencilan titik panas terjadi pada nilai k=17 dengan cluster ke 13,14,15,16 dan 17. Algoritme CLARA pencilan titik panas terjadi pada nilai k=19 dengan cluster ke 14,15,17 dan 19.
+ 
+Kedua penelitian tersebut meneliti pencilan titik panas berdasarkan frekuensi terjadinya titik panas, belum mendeteksi pencilan berdasarkan kepadatan penyebaran titik panas. Algoritme yang dapat mendeteksi pencilan denga kriteria tersebut ialah algoritme local outlier factor (Beunig 2000). Local outlier factor dapat mendeteksi pencilan lokal. Pencilan local ini tidak dapat dideteksi sebagai pencilan jika menggunakan pendekatan clustering.
+\vfill\eject
+
+% Sub-sub Judul 
+\subsection*{Tujuan}
+Tujuan dari penelitian ini adalah:
+\begin{enumerate}[noitemsep] 
+\item Menentukan pencilan pada data titik panas di      
+Provinsi Riau berdasarkan hasil algoritme local outlier factor data titik panas di Provinsi Riau.
+\item Analisis pencilan data titik panas yang dihasilkan berdasarkan aspek lokasi dan waktu. 
+\end{enumerate}
+
+\subsection*{Ruang Lingkup}
+Ruang lingkup penelitian adalah:
+\begin{enumerate}[noitemsep] 
+\item Pencilan yang dideteksi adalah pencilan lokal.
+\item Implementasi menggunakan library DMwR package R
+
+\end{enumerate}
+
+\subsection*{Manfaat}
+Manfaat dari penelitian ini adalah mendapatkan informasi yang tersembunyi berupa pencilan data titik panas sebagai indikator kebakaran hutan. Penelitian ini juga bermanfaat untuk mengidentifikasi wilayah yang beresiko terjadi kebaharan hutan. Hasil yang diperoleh diharapkan dapat bermanfaat dalam pencegahan kebakaran hutan.
+
+
